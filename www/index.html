@@ -23,15 +23,11 @@
 			document.addEventListener("deviceready", onDeviceReady, false);
 		}
 		function onDeviceReady() {
-			document.addEventListener("exitApp", exitApp, false);
-			//document.getElementById('exitApp').addEventListener('click', function() {
-			//	navigator.app.exitApp();
+			document.getElementById('exitApp').addEventListener('click', function() {
+			navigator.app.exitApp();
 			});
 		}
 		
-		function exitApp(){
-			navigator.app.exitApp();
-		}
 		</script>
     
 		<title>PUSTAKA HERBAL</title>
@@ -47,7 +43,7 @@
 		<li><a href="cari.html">PENCARIAN</a>
 		<li><a href="author.html">TENTANG PENYUSUN</a></li></li>
 		<li><a href="mailto:rinanial03@gmail.com">HUBUNGI KAMI</a></li>
-		<li><a href=javascript:void(0) onClick="exitApp()" >KELUAR</a></li></li>
+		<li><a id='exitApp'>KELUAR</a></li></li>
 	  </ul>
 	</div>
 
