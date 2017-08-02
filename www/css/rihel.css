@@ -12,6 +12,8 @@ background-position: bottom center;
 background-size:cover; height: 100%;
 }
 
+.nav li { background: #CEFF8C; opacity: 0.84;}
+
 .appLogo {
 	min-height: 85px; text-align: center; padding: 15px;
 	background: #DFFF8C; margin-bottom:-5px;
@@ -24,7 +26,7 @@ ul.menu li {
 
 .page-title {padding: 5px; background:#800000; color: #FFF; 
 	text-align: center; padding: 10px 0px; margin-bottom:-2px;}
-ul.menu li a { color: #008000; }
+ul.menu li a { color: #024102; }
 
 .rh-list-item {
 	border: 1px solid #81F653; padding: 5px 20px; margin: 2px; min-height: 50px;
