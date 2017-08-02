@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta http-equiv="Content-Security-Policy" 
+         content="default-src *; 
+                  style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
+                  script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/rihel.css" />
+        <script src="cordova.js"></script>
+		<!-- bootstrap resource -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+		function onLoad() {
+			document.addEventListener("deviceready", onDeviceReady, false);
+		}
+		function onDeviceReady() {
+			document.addEventListener("exitApp", exitApp, false);
+			//document.getElementById('exitApp').addEventListener('click', function() {
+			//	navigator.app.exitApp();
+			});
+		}
+		
+		function exitApp(){
+			navigator.app.exitApp();
+		}
+		</script>
+    
+		<title>PUSTAKA HERBAL</title>
+    </head>
+<body class='rihel'>
+	<div class='appLogo'>
+		<img src='img/icon-herbal.png' />
+		<p>Pustaka Herbal</p>
+	</div>
+	<div class='row'>
+	  <ul class="nav nav-pills nav-stacked menu">
+		<li><a href="herbal.html">JENIS TANAMAN</a></li>
+		<li><a href="cari.html">PENCARIAN</a>
+		<li><a href="author.html">TENTANG PENYUSUN</a></li></li>
+		<li><a href="mailto:rinanial03@gmail.com">HUBUNGI KAMI</a></li>
+		<li><a href=javascript:void(0) onClick="exitApp()" >KELUAR</a></li></li>
+	  </ul>
+	</div>
+
+</body>
+</html>

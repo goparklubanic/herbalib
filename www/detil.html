@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           ;
+               style-src  'self' 'unsafe-inline'
+                          127.0.0.1
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com" />
+    <link rel="stylesheet" type="text/css" href="css/rihel.css" />
+    <!-- bootstrap resource -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/rihel.js"></script>
+     <script>
+    $('document').ready(function(){
+		var ih = localStorage.getItem('ih');
+		$.getJSON(rqserver+'request.php?rq=info&ih='+ih, function(result){
+			$.each(result, function(i, data){
+				var pics = data.foto;
+				var pic = pics.split(',');
+				$('#album').html('');
+				for(var i = 1 ; i < pic.length ; i++){
+					$('#album').append(
+					"<div class='photo-box'>"+
+					"<img src='https://rina.klubaners.web.id/gallery/"+pic[i]+"'>"+
+					"</div>");
+				}
+				$("#latinos").append(data.latin);
+				$("#infotan").append(data.detil);
+			});
+		});
+		$('#khasiat').html('');
+		$.getJSON(rqserver+'request.php?rq=khasiat&ih='+ih,function(result){
+			$.each(result,function(i,data){
+				$('#khasiates').append(
+				"<li>"+data.khasiat+"</li>"+
+				"<p style='font-family:sans-serif; font-size:10pt;'>"+data.cara+"</p>");
+			});
+		});
+	});
+	
+	function halmun(){
+		var href=localStorage.getItem('halmun');
+		window.location=href;
+	}
+    </script>
+    
+    <title>PUSTAKA HERBAL</title>
+</head>
+<body class='rihel'>
+	<div class='appLogo'>
+		<img src='img/icon-herbal.png' />
+		<p>Pustaka Herbal</p>
+	</div>
+	<div class='row'>
+	  <h4 class='page-title'>DETIL TANAMAN</h4>
+	  <div class='album' id="album">
+	  <div class='photo-box'><img src='img/icon-herbal.png'></div>
+	  <div class='photo-box'><img src='img/icon-herbal.png'></div>
+	  <div class='photo-box'><img src='img/icon-herbal.png'></div>
+	  <div class='photo-box'><img src='img/icon-herbal.png'></div>
+	  </div>
+	  <div class='detil-tanaman'>
+	  <h4>Informasi Dasar</h4>
+	  <p>Nama Latin: <i><span id='latinos'></span></i></p>
+	  <p id='infotan'></p>
+	  </div>
+	  <div class='detil-tanaman'>
+	    <h4>Khasiat Tanaman</h4>
+	    <ol id='khasiates'>
+	      
+	    </ol>
+	  </div>
+	  <div class='rh-nav'>
+	    <!--a href=javascript:void(0) onClick=halmun()>Kembali</a-->
+	  </div>
+	</div>
+</body>
+</html>
