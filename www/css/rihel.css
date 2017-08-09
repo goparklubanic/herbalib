@@ -6,10 +6,10 @@ font-size: 12pt;
 font-family: Times;  
 height: 100%; 
 background-image: url('../img/ikon-daun.png');
-background-repeat: no-repeat; 
+background-repeat: repeat-x; 
 background-attachment: fixed;
 background-position: bottom center; 
-background-size:cover; height: 100%;
+background-size:320px 120px; height: 30%;
 }
 
 .nav li { background: #CEFF8C; opacity: 0.84;}
@@ -52,7 +52,7 @@ ul.menu li a { color: #024102; }
 .table-nav {max-width: 400px; width: 100%;}
 .btn-nav {width:100%; background: #53F6CB; color: #800000; font-size: 11pt;
  font-family:sans-serif; padding: 10px;}
-.src-box, #src-res {padding: 0px 15px; margin: 5px 5px;}
+.src-box, #src-res {padding: 5px 15px; margin: 5px 5px; color: #000; }
 
 
 #src-res p{color:#000; font-family: sans-serif; font-size: 10pt;}
