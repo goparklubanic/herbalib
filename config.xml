@@ -19,23 +19,20 @@
     <allow-navigation href="*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
-        <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
-        <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
-        <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
-        
-        <splash src="res/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
-		<splash src="res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
-		<splash src="res/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
-		<splash src="res/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
-
-		<splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
-		<splash src="res/screen/android/screen-ldpi-portrait.png " density="port-ldpi"/>
-		<splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
-		<splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
-	    
+        <preference name="screen" value="splash" />
+        <icon qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+        <icon qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+        <icon qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+        <icon qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+        <splash qualifier="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png" />
+        <splash qualifier="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png" />
+        <splash qualifier="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png" />
+        <splash qualifier="land-xhdpi" src="res/screen/android/screen-xhdpi-landscape.png" />
+        <splash qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
+        <splash qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png " />
+        <splash qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
+        <splash qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
     </platform>
-   
     <engine name="android" spec="~6.2.3" />
-    <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
+    <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
 </widget>

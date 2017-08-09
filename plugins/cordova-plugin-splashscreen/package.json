@@ -1,33 +1,30 @@
 {
-  "_from": "cordova-plugin-splashscreen@4.0.3",
-  "_id": "cordova-plugin-splashscreen@4.0.3",
+  "_from": "git+https://github.com/apache/cordova-plugin-splashscreen.git",
+  "_id": "cordova-plugin-splashscreen@4.0.4-dev",
   "_inBundle": false,
-  "_integrity": "sha1-dzzRNjwfO6y5kBZj6eN5PdPgoZ0=",
+  "_integrity": "sha1-fNUxFkgUdJdCTOXIxmcBA7IW6aU=",
   "_location": "/cordova-plugin-splashscreen",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "cordova-plugin-splashscreen@4.0.3",
-    "name": "cordova-plugin-splashscreen",
-    "escapedName": "cordova-plugin-splashscreen",
-    "rawSpec": "4.0.3",
-    "saveSpec": null,
-    "fetchSpec": "4.0.3"
+    "type": "git",
+    "raw": "https://github.com/apache/cordova-plugin-splashscreen.git",
+    "rawSpec": "https://github.com/apache/cordova-plugin-splashscreen.git",
+    "saveSpec": "git+https://github.com/apache/cordova-plugin-splashscreen.git",
+    "fetchSpec": "https://github.com/apache/cordova-plugin-splashscreen.git",
+    "gitCommittish": "master"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-4.0.3.tgz",
-  "_shasum": "773cd1363c1f3bacb9901663e9e3793dd3e0a19d",
-  "_spec": "cordova-plugin-splashscreen@4.0.3",
+  "_resolved": "git+https://github.com/apache/cordova-plugin-splashscreen.git#fcef678a7fa6532ddc02811e11b00383bc17ef20",
+  "_spec": "https://github.com/apache/cordova-plugin-splashscreen.git",
   "_where": "/home/nugroho/PhoneGapProjects/rihel/node_modules",
   "author": {
     "name": "Apache Software Foundation"
   },
   "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-splashscreen/issues"
+    "url": "https://issues.apache.org/jira/browse/CB"
   },
   "bundleDependencies": false,
   "cordova": {
@@ -89,5 +86,5 @@
     "test": "npm run jshint"
   },
   "types": "./types/index.d.ts",
-  "version": "4.0.3"
+  "version": "4.0.4-dev"
 }
