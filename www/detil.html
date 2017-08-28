@@ -50,7 +50,7 @@
 					"<img src='https://rina.klubaners.web.id/gallery/"+pic[i]+"'>"+
 					"</div>");
 				}
-				$("#latinos").append(data.latin);
+				$("#latinos").append(data.nama+" (<i>"+data.latin+"</i>) ");
 				$("#infotan").append(data.detil);
 			});
 		});
@@ -87,7 +87,7 @@
 	  </div>
 	  <div class='detil-tanaman'>
 	  <h4>Informasi Dasar</h4>
-	  <p>Nama Latin: <i><span id='latinos'></span></i></p>
+	  <p id='latinos'></p>
 	  <p id='infotan'></p>
 	  </div>
 	  <div class='detil-tanaman'>
