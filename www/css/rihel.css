@@ -47,8 +47,8 @@ ul.menu li a { color: #000000; }
 .detil-tanaman h4{color: #800000; }
 .detil-tanaman ol{border: 0px solid #000; padding:0px 15px; color: #222;
 	font-family:helvetica,arial; }	
-.rh-nav{margin: 5px 0px; background: #340000; text-align: center; 
-	padding: 10px;}
+.rh-nav{margin: 5px 0px; background: #340000; text-align: left; 
+	padding: 10px 30px;; height: 60px;}
 .rh-nav a{color: #FFF; text-decoration: none; }
 
 .table-nav {max-width: 400px; width: 100%;}
