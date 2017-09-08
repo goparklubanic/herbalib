@@ -51,9 +51,10 @@ ul.menu li a { color: #000000; }
 	padding: 10px 30px;; height: 60px;}
 .rh-nav a{color: #FFF; text-decoration: none; }
 
-.table-nav {max-width: 400px; width: 100%;}
-.btn-nav {width:100%; background: #00006D; color: #FFFFBF; 
-	font-size: 11pt; font-family:sans-serif; padding: 10px;}
+.table-nav {max-width: 400px; width: 100%; border:none; background: transparent;}
+.btn-nav {width:100%; font-size: 11pt; font-family:sans-serif; padding: 10px;
+	background:#340000;}
+.btn-nav img{height:35px; width: 120px;}
 .src-box, #src-res {padding: 5px 15px; margin: 5px 5px; color: #000; 
 	background: #FFACAC; opacity:0.86;}
 
